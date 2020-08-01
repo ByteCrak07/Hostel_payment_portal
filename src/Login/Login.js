@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import gectemblem from "C:/Users/Shone/Desktop/Reactjs/shone/src/assets/gectemblem.jpg";
+import gectemblem from "../assets/gectemblem.jpg";
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const themes = createMuiTheme({
