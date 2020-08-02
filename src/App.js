@@ -3,23 +3,27 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //importing pages
+import Nav from './Pages/Nav';
 import Home from './Pages/Home';
-import Login_s from './Pages/Student/Login';
-import Dashboard_s from './Pages/Student/Dashboard';
-import Login_ad from './Pages/Admin/Login';
-import Dashboard_ad from './Pages/Admin/Dashboard';
+import Login from './Pages/Login';
+import Profile from './Pages/Profile';
+import History from './Pages/History';
+import Notfications from './Pages/Notifications';
+import Footer from './Pages/Footer';
 
 function App() {
     return (
         <Router>
             <div className='App'>
+                <Nav />
                 <Switch>
                     <Route path='/' exact component={Home} />
-                    <Route path='/login' exact component={Login_s} />
-                    <Route path='/dashboard' exact component={Dashboard_s} />
-                    <Route path='/admin/login' exact component={Login_ad} />
-                    <Route path='/admin/dashboard' exact component={Dashboard_ad} />
+                    <Route path='/login' exact component={Login} />
+                    <Route path='/profile' exact component={Profile} />
+                    <Route path='/history' exact component={History} />
+                    <Route path='/notifications' exact component={Notfications} />
                 </Switch>
+                <Footer />
             </div>
         </Router>
     );

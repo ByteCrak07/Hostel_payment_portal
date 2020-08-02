@@ -1,9 +1,9 @@
-import React from 'react'
-import '../../Assets/Styles/Student/Login.css'
+import React from 'react';
+import '../Styles/Login.css';
 
 function Login() {
     return (
-        <div className='St_log'>
+        <div>
             <h1>Student Login Page</h1>
         </div>
     )
