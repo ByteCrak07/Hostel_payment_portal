@@ -3,7 +3,7 @@ import '../Styles/Notifications.css';
 
 function Notifications() {
     return (
-        <div className='St_log'>
+        <div>
             <h1>Notifications Page</h1>
         </div>
     )
