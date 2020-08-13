@@ -9,7 +9,6 @@ import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import History from "./Pages/History";
 import Notfications from "./Pages/Notifications";
-import Footer from "./Pages/Footer";
 
 function App() {
   return (

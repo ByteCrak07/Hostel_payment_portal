@@ -11,6 +11,7 @@ import {
   Col,
 } from "reactstrap";
 import "../Styles/History.css";
+import gectemblem from "../Assets/Images/gectemblem.jpg"
 
 class History extends Component {
   constructor(props) {
@@ -23,16 +24,17 @@ class History extends Component {
 
     this.toggle = this.toggle.bind(this);
   }
+
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({ activeTab: tab });
       var tab_active = document.getElementById(
-        tab == "2" ? "pending" : "recent"
+        tab === "2" ? "pending" : "recent"
       );
       tab_active.style.color = "black";
       tab_active.style.boxShadow = "rgb(15, 211, 195) 2px 3px 7px";
       tab_active.style.borderBottom = " none";
-      var tab = document.getElementById(tab == "2" ? "recent" : "pending");
+      tab = document.getElementById(tab === "2" ? "recent" : "pending");
       tab.style.color = "rgb(177, 180, 180)";
       tab.style.boxShadow = "none";
       tab.style.borderBottom = "2px solid rgb(177, 180, 180)";
@@ -46,7 +48,7 @@ class History extends Component {
           <div className="container ">
             <div className="row head ">
               <div className="col-1 offset-2">
-                <img src="/Assets/gectemblem.jpg" className="emblem" />
+                <img src={gectemblem} className="emblem" alt="emblem" />
               </div>
               <div className="col-8">GECT PORTAL</div>
             </div>
