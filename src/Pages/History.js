@@ -11,7 +11,7 @@ import {
   Col,
 } from "reactstrap";
 import "../Styles/History.css";
-import gectemblem from "../Assets/Images/gectemblem.jpg"
+import gectemblem from "../Assets/Images/gectemblem.jpg";
 
 class History extends Component {
   constructor(props) {
@@ -53,20 +53,20 @@ class History extends Component {
               <div className="col-8">GECT PORTAL</div>
             </div>
             <hr />
-            <div className="row option">
+            <div className="row option" id="de_active1">
               <div className="col">
                 <span className="fa fa-user fa-2x"></span>&nbsp;USER PROFILE
               </div>
             </div>
 
-            <div className="row option active_page">
+            <div className="row option" id="active_page">
               <div className="col">
                 <span className="fa fa-credit-card-alt fa-2x"></span>&nbsp;PAY
                 MY FEE
               </div>
             </div>
 
-            <div className="row option ">
+            <div className="row option " id="de_active2">
               <div className="col">
                 <span className="fa fa-bell-o fa-2x"></span>&nbsp;NOTIFICATIONS
               </div>
