@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+
+.login {
+  background-image: url("../Assets/Images/arch.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 90%;
+  color: #ecf1fb;
+  font-family: "Philosopher", sans-serif;
+  background-position-x: center;
+}
+
+.row-header {
+  padding-top: 5vh;
+}
+.text-col {
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  background-color: black;
+  border: #ecf1fb solid 1px;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 3.5vh;
+}
+.login-btn:hover {
+  color: black;
+  background-color: #ecf1fb;
+  border: 1px solid black;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: none;
+}
+hr {
+  border: 1px solid #ecf1fb;
+}

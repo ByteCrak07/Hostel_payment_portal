@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+.payment {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Philosopher", sans-serif;
+}
+.jumbotron {
+  background-color: black;
+  color: rgb(15, 211, 195);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.headers {
+  text-align: left;
+}
+h2 {
+  font-size: 7vh;
+  margin-bottom: 5vh;
+}
+.sideboard {
+  color: #ecf1fb;
+  float: left;
+  height: 100vh;
+  width: 20vw;
+  background-color: rgb(15, 211, 195);
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: rgb(15, 211, 195) 3px 3px 7px;
+}
+.content {
+  float: right;
+  width: 80vw;
+  background-color: #ecf1fb;
+  min-height: 100vh;
+}
+.pay {
+  background-color: rgb(177, 180, 180);
+  border: none;
+  color: black;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: black 2px 3px 7px;
+}
+.history {
+  margin-top: 7vh;
+}
+
+#recent {
+  width: 38vw;
+  font-size: 4vh;
+  border-top: black 2px;
+  border-radius: 5px;
+  background-color: #ecf1fb;
+  box-shadow: rgb(15, 211, 195) 2px 3px 7px;
+}
+#pending {
+  width: 35vw;
+  font-size: 4vh;
+  border-radius: 5px;
+  background-color: #ecf1fb;
+  color: rgb(177, 180, 180);
+  border-bottom: 2px solid rgb(177, 180, 180);
+}
+hr {
+  background-color: rgb(15, 211, 195);
+}
+
+.head {
+  height: 5vh;
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+}
+.emblem {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+}
+.option {
+  margin-left: 5%;
+  height: 10vh;
+  width: 90%;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 55px;
+}
+.active_page {
+  background-color: #ecf1fb;
+  color: rgb(15, 211, 195);
+}
