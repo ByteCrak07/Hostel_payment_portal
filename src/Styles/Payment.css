@@ -1,0 +1,101 @@
+.payment {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Philosopher", sans-serif;
+}
+
+.jumbotron {
+  background-color: black;
+  color: rgb(15, 211, 195);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.headers {
+  text-align: left;
+}
+
+h2 {
+  font-size: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 3vh;
+}
+
+.content {
+  float: right;
+  width: 80vw;
+  background-color: #ecf1fb;
+  min-height: 100vh;
+}
+
+.pay {
+  background-color: rgb(177, 180, 180);
+  border: none;
+  color: black;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: black 2px 3px 7px;
+}
+
+.history {
+  margin-top: 7vh;
+}
+
+#recent {
+  width: 38vw;
+  font-size: 4vh;
+  border-top: black 2px;
+  border-radius: 5px;
+  background-color: #ecf1fb;
+  box-shadow: rgb(15, 211, 195) 2px 3px 7px;
+}
+
+#pending {
+  width: 35vw;
+  font-size: 4vh;
+  border-radius: 5px;
+  background-color: #ecf1fb;
+  color: rgb(177, 180, 180);
+  border-bottom: 2px solid rgb(177, 180, 180);
+}
+
+.head {
+  height: 5vh;
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.emblem {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    float: left;
+    width: 100vw;
+    background-color: #ecf1fb;
+    min-height: 100vh;
+  }
+
+  .headers, h3 {
+    font-size: 3vh;
+  }
+
+  #recent {
+    font-size: 2.5vh;
+    width: 48vw;
+    height: 7vh;
+    margin-left: 2vw;
+  }
+  #pending {
+    width: 48vw;
+    font-size: 2.5vh;
+    height: 7vh;
+  }
+}

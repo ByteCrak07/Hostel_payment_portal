@@ -1,0 +1,11 @@
+.dash {
+    margin-left: 250px;
+    transition: 0.5s;
+    height: 100vh;
+}
+
+/* when width less than 768px */
+.dash-collapsed {
+    margin-left: 75px;
+    transition: 0.5s;
+}

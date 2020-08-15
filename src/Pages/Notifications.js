@@ -5,15 +5,15 @@ class Notifications extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            notifs=[],
-            list="<div></div>"
+            notifs: [],
+            list: "<div></div>"
         }
     }
 
-   async componentDidMount() {
+    componentDidMount() {
         //fetch notifications into notifs.
         var notif_list
-        if (this.state.notifs.length != 0) {
+        if (this.state.notifs.length !== 0) {
              notif_list = this.state.notifs.map((notif) => {
                 return (
                     <li><p>{notif.message}</p>
@@ -36,8 +36,8 @@ class Notifications extends Component {
     render()
     {
         return (
-            <div classname="notifs">
-                <div className="row notif-row">
+            <div className="notification">
+                <div className="notif-row">
                     <div className="col-10 offset-1">
                         {this.state.list}
 
@@ -64,4 +64,4 @@ class Notifications extends Component {
     //}
 }
 
-export default Notifications
+export default Notifications;

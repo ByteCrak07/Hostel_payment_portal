@@ -66,7 +66,7 @@ class Login extends Component {
                     type="submit"
                     value="submit"
                     className="btn-lg btn-block login-btn"
-                    href="/profile"
+                    href="/dashboard/profile"
                   >
                     Login
                   </Button>

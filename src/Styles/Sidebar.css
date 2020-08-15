@@ -1,0 +1,67 @@
+.sideboard {
+    color: #ecf1fb;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(15, 211, 195);
+    box-shadow: rgb(15, 211, 195) 3px 3px 7px;
+    transition: 0.5s;
+}
+
+hr {
+    background-color: rgb(15, 211, 195);
+}
+  
+.head {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.emblem {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.option {
+    margin-left: 5%;
+    height: 10vh;
+    width: 90%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
+}
+
+.active-menu {
+    background-color: #ecf1fb;
+    color: rgb(15, 211, 195);
+}
+
+/* when width less than 768px */
+.sideboard-collapsed {
+    width: 70px;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.sideboard-collapsed .text {
+    display: none;
+}
+
+.sideboard-collapsed .container {
+    padding: 0;
+}
+
+.sideboard-collapsed .option {
+    margin: 0;
+    margin-top: 5vh;
+    width: 100%;
+    border-radius: 10px;
+}

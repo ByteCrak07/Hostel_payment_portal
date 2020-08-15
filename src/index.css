@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+
 /* for removing all decorations and colours for a tags
 a, a:visited, a:hover, a:active {
   color: inherit;

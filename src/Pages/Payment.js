@@ -10,10 +10,9 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import "../Styles/History.css";
-import gectemblem from "../Assets/Images/gectemblem.jpg";
+import "../Styles/Payment.css";
 
-class History extends Component {
+class Payment extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,42 +43,12 @@ class History extends Component {
   render() {
     return (
       <div className="payment">
-        <div className="sideboard d-none d-md-block">
-          <div className="container ">
-            <div className="row head ">
-              <div className="col-1 offset-2">
-                <img src={gectemblem} className="emblem" alt="emblem" />
-              </div>
-              <div className="col-8">GECT PORTAL</div>
-            </div>
-            <hr />
-            <div className="row option" id="de_active1">
-              <div className="col">
-                <span className="fa fa-user fa-2x"></span>&nbsp;USER PROFILE
-              </div>
-            </div>
-
-            <div className="row option" id="active_page">
-              <div className="col">
-                <span className="fa fa-credit-card-alt fa-2x"></span>&nbsp;PAY
-                MY FEE
-              </div>
-            </div>
-
-            <div className="row option " id="de_active2">
-              <div className="col">
-                <span className="fa fa-bell-o fa-2x"></span>&nbsp;NOTIFICATIONS
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="content ">
-          {" "}
-          <Jumbotron className="jumbotron">
+          <Jumbotron>
             <div className="container">
               <div className="row">
                 <div className="col headers d-flex">
-                  <span className="fa fa-user fa-2x"></span>{" "}
+                  <span className="fa fa-user fa-2x"></span>
                   <h3> &nbsp;Firstname Lastname &nbsp;({this.state.reg_no})</h3>
                 </div>
               </div>
@@ -89,8 +58,7 @@ class History extends Component {
             <div className="row " style={{ marginTop: "5vh" }}>
               <div className="col-md-7 headers">
                 <h2>
-                  Amount <span className="fa fa-caret-right f-2x"></span> Rs.{" "}
-                  {this.state.fees}/-
+                  Amount <span className="fa fa-caret-right f-2x"></span> Rs.{this.state.fees}/-
                 </h2>
               </div>
               <div className="col-10 offset-1 col-md-4 offset-md-1">
@@ -145,4 +113,4 @@ class History extends Component {
   }
 }
 
-export default History;
+export default Payment;
