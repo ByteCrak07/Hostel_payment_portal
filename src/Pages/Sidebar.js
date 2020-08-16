@@ -7,6 +7,8 @@ function Sidebar(props) {
     let sideboard_class = "sideboard";
     if(props.width < 768 && props.collapse) {
         sideboard_class = "sideboard sideboard-collapsed"
+    } else if(props.width < 768) {
+        sideboard_class = "sideboard sideboard-float"
     }
     
     let path = useLocation().pathname;

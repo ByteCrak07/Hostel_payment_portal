@@ -65,3 +65,14 @@ hr {
     width: 100%;
     border-radius: 10px;
 }
+
+/* when width less than 768px and sideboard is opened */
+.sideboard-float {
+    transition: 0s;
+    animation: sideboard 0.5s;
+}
+
+@keyframes sideboard {
+    0% {left: -175px;}
+    100% {left: 0px;}
+}
