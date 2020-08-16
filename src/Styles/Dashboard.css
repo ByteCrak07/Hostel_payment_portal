@@ -1,11 +1,16 @@
 .dash {
-    margin-left: 250px;
-    transition: 0.5s;
-    height: 100vh;
+  margin-left: 250px;
+  transition: 0.5s;
+  height: 100vh;
 }
 
 /* when width less than 768px */
 .dash-collapsed {
-    margin-left: 75px;
-    transition: 0.5s;
+  margin-left: 0px;
+  transition: 0.5s;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .dash {
+    margin-left: 0px;
+  }
 }

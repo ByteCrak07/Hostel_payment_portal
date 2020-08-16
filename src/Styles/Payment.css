@@ -20,7 +20,7 @@
 h2 {
   font-size: 5vh;
   margin-bottom: 5vh;
-  margin-left: 3vh;
+  margin-left: 1vh;
 }
 
 .content {
@@ -75,15 +75,20 @@ h2 {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 800px) {
-  .content {
+@media screen and (max-width: 768px) {
+  .payment {
     float: left;
     width: 100vw;
-    background-color: #ecf1fb;
-    min-height: 100vh;
+  }
+  .profile-emb {
+    display: none;
   }
 
-  .headers, h3 {
+  .headers {
+    font-size: 3vh;
+    margin-left: 3vh;
+  }
+  h3 {
     font-size: 3vh;
   }
 
@@ -91,7 +96,6 @@ h2 {
     font-size: 2.5vh;
     width: 48vw;
     height: 7vh;
-    margin-left: 2vw;
   }
   #pending {
     width: 48vw;
