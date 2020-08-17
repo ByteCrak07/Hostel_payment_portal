@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.amount {
+  justify-content: space-between;
+}
+
 .headers {
   text-align: left;
 }
@@ -24,82 +28,86 @@ h2 {
 }
 
 .content {
-  float: right;
-  width: 80vw;
+  width: 100%;
   background-color: #ecf1fb;
   min-height: 100vh;
 }
 
 .pay {
+  width: 100%;
   background-color: rgb(177, 180, 180);
   border: none;
   color: black;
   border-radius: 25px;
   outline: none;
   box-shadow: black 2px 3px 7px;
+  max-width: 300px;
+  font-size: 3vh;
 }
 
 .history {
   margin-top: 7vh;
 }
 
-#recent {
-  width: 38vw;
+.tabs {
+  width: calc(49vw - 127px);
   font-size: 4vh;
-  border-top: black 2px;
   border-radius: 5px;
+  color: rgb(177, 180, 180);
   background-color: #ecf1fb;
+  box-shadow: none;
+}
+
+.tabs_active {
+  color: black;
   box-shadow: rgb(15, 211, 195) 2px 3px 7px;
 }
 
-#pending {
-  width: 35vw;
-  font-size: 4vh;
-  border-radius: 5px;
-  background-color: #ecf1fb;
-  color: rgb(177, 180, 180);
-  border-bottom: 2px solid rgb(177, 180, 180);
-}
-
-.head {
-  height: 5vh;
-  margin-top: 3vh;
-  display: flex;
+.history .nav {
+  width: 100%;
+  flex-wrap: nowrap;
   align-items: center;
-  font-size: 3vh;
+  justify-content: space-around;
 }
 
-.emblem {
-  height: 5vh;
-  width: 5vh;
-  border-radius: 50%;
+.nav-link {
+  border-color: #e9ecef #e9ecef #dee2e6 !important;
 }
 
-@media screen and (max-width: 768px) {
-  .payment {
-    float: left;
-    width: 100vw;
+@media (min-width: 768px) and (max-width: 992px) {
+  .tabs {
+    width: calc(50vw - 70px);
   }
-  .profile-emb {
-    display: none;
+}
+
+@media (max-width: 768px) {
+  .content {
+    min-height: calc(100vh - 72px);
+  }
+
+  .history {
+    margin-top: 3vh;
+  }
+
+  .tabs {
+    width: 48vw;
   }
 
   .headers {
     font-size: 3vh;
     margin-left: 3vh;
   }
+
+  h2 {
+    font-size: 4.25vh;
+    margin-bottom: 2vh;
+  }
+
   h3 {
     font-size: 3vh;
   }
 
-  #recent {
+  .tabs {
     font-size: 2.5vh;
-    width: 48vw;
-    height: 7vh;
-  }
-  #pending {
-    width: 48vw;
-    font-size: 2.5vh;
-    height: 7vh;
   }
 }

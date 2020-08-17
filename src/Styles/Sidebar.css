@@ -1,94 +1,167 @@
+.sideboard, .navbar {
+    color: #ecf1fb;
+    position: fixed;
+    left: 0;
+    background-color: rgb(15, 211, 195);
+    transition: 0.5s;
+    font-family: "Philosopher", sans-serif;
+}
+
 .sideboard {
-  color: #ecf1fb;
-  height: 100vh;
-  width: 250px;
-  position: fixed;
-  left: 0;
-  z-index: 1;
-  background-color: rgb(15, 211, 195);
-  box-shadow: rgb(15, 211, 195) 3px 3px 7px;
-  transition: 0.5s;
-  font-family: "Philosopher", sans-serif;
+    height: 100%;
+    width: 250px;
+    top: 0;
+    z-index: 2;
+    box-shadow: rgb(15, 211, 195) 3px 0px 7px;
+}
+
+.navbar {
+    height: 72px;
+    width: 100%;
+    top: -72px;
+    z-index: 1;
 }
 
 hr {
-  background-color: rgb(15, 211, 195);
+    background-color: rgb(15, 211, 195);
 }
-
+  
 .head {
-  margin-top: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3vh;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
 
 .emblem {
-  height: 5vh;
-  width: 5vh;
-  border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 3px;
 }
-.toggler {
-  width: 7vh;
-  height: 7vh;
-  z-index: 2;
+
+.emblemdiv {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: translate(-2px, -2px);
+    border: white solid 2px;
 }
 
 .option {
-  margin-left: 5%;
-  height: 10vh;
-  width: 90%;
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 55px;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 50px;
+    height: 10vh;
+    width: 90%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
 }
 
 .active-menu {
-  background-color: #ecf1fb;
-  color: rgb(15, 211, 195);
+    background-color: #ecf1fb;
+    color: rgb(15, 211, 195);
 }
 
-/* when width less than 768px */
+/* when width less than 992px */
 .sideboard-collapsed {
-  width: 0px;
-  transition: 0.5s;
-  box-shadow: none;
-}
-.sideboard-collapsed .text {
-  display: none;
-}
-.sideboard-collapsed .head {
-  display: none;
+    width: 70px;
+    transition: 0.5s;
+    box-shadow: none;
 }
 
-.sideboard-collapsed .options {
-  display: none;
+.sideboard-collapsed .text {
+    display: none;
 }
 
 .sideboard-collapsed .container {
-  padding: 0;
+    padding: 0;
 }
 
 .sideboard-collapsed .option {
-  margin: 0;
-  margin-top: 5vh;
-  width: 100%;
-  border-radius: 10px;
+    margin: 0;
+    margin-top: 5vh;
+    width: 100%;
+    border-radius: 10px;
 }
 
-/* when width less than 768px and sideboard is opened */
+/* when width less than 992px and sideboard is opened */
 .sideboard-float {
-  transition: 0s;
-  animation: sideboard 0.5s;
+    transition: 0s;
+    animation: sideboard 0.5s;
 }
 
 @keyframes sideboard {
-  0% {
-    left: -175px;
-  }
-  100% {
-    left: 0px;
-  }
+    0% {
+        left: -175px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sideboard .emblemdiv, .navbar .emblemdiv {
+        box-shadow: rgba(0, 0, 0, 0.75) 4px 4px 4px;
+        transition: 0.2s;
+    }
+
+    .emblemdiv:active {
+        box-shadow: none;
+        transform: translate(2px, 2px);
+    }
+}
+
+.sideboard-float .emblemdiv {
+    box-shadow: none;
+}
+
+.sideboard-float .emblemdiv:active {
+    transform: none
+}
+
+/* when width is less than 768px */
+.sideboard-hide {
+    left: -75px;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 0;
+    }
+
+    .navbar .emblemdiv {
+        height: 40px;
+        width: 40px;
+        border-radius: 5px;
+    }
+
+    .head-h {
+        margin: 4px 0 0;
+    }
+
+    @keyframes sideboard {
+        0% {
+            left: -250px;
+        }
+        100% {
+            left: 0px;
+        }
+    }
+}
+
+/* when width is less than 576px */
+@media (max-width: 576px) {
+    .container {
+        padding: 0;
+    }
+
+    .sideboard {
+        max-width: 200px;
+    }
 }

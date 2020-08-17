@@ -1,16 +1,25 @@
 .dash {
-  margin-left: 250px;
-  transition: 0.5s;
-  height: 100vh;
+    margin-left: 257px; /* 250px + 7px by box-shadow */
+    transition: 0.5s;
+    height: 100vh;
+    width: calc(100vw - 257px);
+    overflow: auto;
+}
+
+/* when width less than 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .dash {
+        margin-left: 70px;
+        width: calc(100vw - 70px);
+    }
 }
 
 /* when width less than 768px */
-.dash-collapsed {
-  margin-left: 0px;
-  transition: 0.5s;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .dash {
-    margin-left: 0px;
-  }
+@media (max-width: 768px) {
+    .dash {
+        margin-left: 0px;
+        margin-top: 72px;
+        height: calc(100vh - 72px);
+        width: 100vw;
+    }
 }

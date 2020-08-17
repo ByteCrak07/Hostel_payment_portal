@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
 
 .login {
-  background-image: url("../Assets/Images/arch.jpg");
+  background-image: url("../Assets/Images/arch.svg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;

@@ -32,7 +32,7 @@ class Dashboard extends Component {
     
     updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
-        if(this.state.width >= 768) {
+        if(this.state.width >= 992 || this.state.width < 768) {
             this.setState({collapse: true});
         }
     }
@@ -41,7 +41,7 @@ class Dashboard extends Component {
         if(collapse) {
             this.setState({collapse: collapse})
         } else {
-            if(this.state.collapse && this.state.width < 768) {
+            if(this.state.collapse && this.state.width < 992) {
                 this.setState({collapse: false});
             }
             else {
@@ -55,11 +55,6 @@ class Dashboard extends Component {
     }
 
     render() {
-        let dash_class = "dash";
-        if(this.state.width < 768) {
-            dash_class = "dash dash-collapsed"
-        }
-
         return (
             <div>
                 <Sidebar 
@@ -68,7 +63,7 @@ class Dashboard extends Component {
                     collapseToggle={this.collapseToggle}
                     routeToggle={this.routeToggle}
                 />
-                <div className={dash_class} onClick={() => this.state.collapse ? "" : this.collapseToggle(true)}>
+                <div className="dash" onClick={() => this.state.collapse ? "" : this.collapseToggle(true)}>
                     <Switch>
                         <Route path={`${this.props.match.path}/profile`} exact component={Profile} />
                         <Route path={`${this.props.match.path}/payment`} exact component={Payment} />
