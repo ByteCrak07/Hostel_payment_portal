@@ -1,0 +1,41 @@
+.notification {
+  background-color: rgb(177, 180, 180);
+  min-height: 100vh;
+}
+.notif {
+  padding-top: 5vh;
+}
+.msg {
+  width: 98%;
+  margin-left: 1%;
+  padding-bottom: 1vh;
+  min-height: 8vh;
+  max-height: max-content;
+  margin-bottom: 1.5vh;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: rgb(21, 17, 41) 2px 3px 7px;
+  color: #ecf1fb;
+  opacity: 0.8;
+  border-left: #ecf1fb 0.5vh solid;
+  border-bottom: #ecf1fb 0.25vh solid;
+}
+.msg:before {
+  content: "";
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 1vh solid transparent;
+  border-bottom: 1vh solid transparent;
+  border-right: 2vh solid rgb(240, 233, 233);
+  transform: translate(-60%, 100%);
+  -webkit-transform: translate(-60%, 100%);
+  -moz-transform: translate(-60%, 100%);
+  margin-left: -1vh;
+  margin-top: -1vh;
+}
+
+.message {
+  overflow-wrap: break-word;
+  text-align: left;
+}

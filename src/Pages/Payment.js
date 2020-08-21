@@ -35,10 +35,10 @@ class Payment extends Component {
       <div className="payment">
         <div className="content ">
           <Jumbotron>
-            <div className="container">
+            <div className="container-fluid">
               <div className="row">
                 <div className="col headers d-flex">
-                  <span className="fa fa-user fa-2x"></span>
+                  <span className="fa fa-user fa-2x d-sm-none d-md-flex"></span>
                   <h3> &nbsp;Firstname Lastname &nbsp;({this.state.reg_no})</h3>
                 </div>
               </div>
@@ -48,7 +48,8 @@ class Payment extends Component {
             <div className="row amount" style={{ marginTop: "5vh" }}>
               <div className="col-sm-7 col-md-7 headers">
                 <h2>
-                  Amount <span className="fa fa-caret-right f-2x"></span> Rs.{this.state.fees}/-
+                  Amount <span className="fa fa-caret-right f-2x"></span> Rs.
+                  {this.state.fees}/-
                 </h2>
               </div>
               <div className="container col-4 col-md-4">
@@ -60,7 +61,9 @@ class Payment extends Component {
               <Nav tabs>
                 <NavItem>
                   <NavLink
-                    className={this.state.activeTab === "1" ? "tabs tabs_active" : "tabs"}
+                    className={
+                      this.state.activeTab === "1" ? "tabs tabs_active" : "tabs"
+                    }
                     onClick={() => {
                       this.toggle("1");
                     }}
@@ -70,7 +73,9 @@ class Payment extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={this.state.activeTab === "2" ? "tabs tabs_active" : "tabs"}
+                    className={
+                      this.state.activeTab === "2" ? "tabs tabs_active" : "tabs"
+                    }
                     onClick={() => {
                       this.toggle("2");
                     }}

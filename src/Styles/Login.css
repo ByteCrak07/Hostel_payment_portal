@@ -1,40 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
 
 .login {
-  background-image: url("../Assets/Images/arch.svg");
+  background-image: url("../Assets/Images/BACKGROUND.jpg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 90%;
+  background-attachment: fixed;
   color: #ecf1fb;
   font-family: "Philosopher", sans-serif;
-  background-position-x: center;
+  background-position: center;
 }
 
-.row-header {
-  padding-top: 5vh;
+.image1,
+.image2,
+.image3 {
+  height: 250px;
+  opacity: 0.85;
+  border-radius: 5px;
+  border: 1px white solid;
+  position: absolute;
+  box-shadow: rgb(94, 231, 94) 2px 3px 7px;
 }
-.text-col {
-  display: flex;
-  justify-content: center;
+.image1 {
+  height: 50vh;
+  width: 45vw;
+  opacity: 0.7;
+  margin-top: 4vh;
+  transform: translateX(-75%);
+  -webkit-transform: translateX(-75%);
+  -moz-transform: translateX(-75%);
+  z-index: 1;
+}
+.image2 {
+  transform: translate(-50%, 110%);
+  -webkit-transform: translate(-50%, 110%);
+  -moz-transform: translate(-50%, 110%);
+  height: 45vh;
+  opacity: 0.75;
+  width: 45vw;
+  z-index: 1;
+}
+.image3 {
+  margin-top: 1vh;
+  opacity: 0.85;
+  height: 65vh;
+  width: 25vw;
+  transform: translateX(25%);
+  -webkit-transform: translateX(25%);
+  -moz-transform: translateX(25%);
+  z-index: 2;
 }
 
-.login-btn {
-  background-color: black;
-  border: #ecf1fb solid 1px;
-  outline: none;
-  border-radius: 20px;
-  margin-top: 3.5vh;
+.form-container {
+  padding: 15vh 3vw 0 2vw;
+  color: white;
+  z-index: 2;
 }
-.login-btn:hover {
-  color: black;
-  background-color: #ecf1fb;
-  border: 1px solid black;
-  text-decoration: none;
+
+.form-container .form-control {
+  color: white;
+  border: none;
+  border-bottom: 2px solid white !important;
+  border-radius: 0;
+  margin-top: 8vh;
+  height: 40px;
+  outline: 0px;
+  background-color: transparent;
 }
-.link:hover {
-  text-decoration: none;
+.forgot {
+  cursor: pointer;
 }
-hr {
-  border: 1px solid #ecf1fb;
+.forgot:hover {
+  text-decoration: underline;
+  font-size: 2.5vh;
+}
+.form-container button {
+  margin-top: 7vh;
+}
+.modal {
+  font-family: "Philosopher", sans-serif !important;
+}
+
+@media screen and (max-width: 767px) {
+  .image1,
+  .image2,
+  .image3 {
+    display: none;
+  }
 }
